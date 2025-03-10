@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="IncidentReportForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="text">RescueAI</div>
+        <div class="header-menu">
+            <div class="header-menu-item" onclick="redirectHome()">Home</div>
+            <div class="header-menu-item" onclick="redirectEmergencyAlerts()">Emergency Alerts</div>
+            <div class="header-menu-item">Reports</div>
+            <div class="header-menu-item">Dashboard</div>
+        </div>
+        <!-- avatar -->
+        <div class="avatar">
+            <img src="avatar.png" alt="User Avatar">
+        </div>
+        <!-- reportform -->
+        <div class="textIncidentReport">Incident Report</div>
+        <div class="textLocDis">Location of Disaster</div>
+<div class="textbox1">
+    <input type="text" placeholder="Enter Address or coordinates">
+</div>
+<div class="textTypDis">Type of Disaster</div>
+<div class="textbox2">
+    <input type="text" placeholder="Enter details here...">
+</div>
+<div class="textAdDetails">Additional details</div>
+<div class="textarea">
+    <textarea placeholder="Describe the incident..."></textarea>
+</div>
+<button class="button-summit">Report Emergency</button>
+   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LandingPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="bgImage">
+    <img src="joinhands.png" alt="joinhands" width="100%">
+
+</div>
+    <!-- nav bar -->
+    <div class="container">
+        <div class="text">RescueAI</div>
+        <div class="header-menu">
+            <div class="header-menu-item">Home</div>
+            <div class="header-menu-item" onclick="redirectEmergencyAlerts()">Emergency Alerts</div>
+            <div class="header-menu-item" onclick="redirectReport()">Reports</div>
+            <div class="header-menu-item">Dashboard</div>
+
+            
+        </div>
+
+
+        
+
+        <div class="avatar">
+            <img src="avatar.png"  onclick="showPopup()" alt="User Avatar">
+        </div>
+        <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    
+    <div class="popup" id="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2>Profile Information</h2>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Age:</strong> 30</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Location:</strong> New York, USA</p>
+        <p><strong>Phone Number:</strong> +1 234 567 890</p>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+        <p><strong>Address:</strong> 123 Main St, New York, NY</p>
+        <p><strong>Volunteer:</strong> Yes</p>
+        
+    </div>
+
+
+    
+
+
+
+
+
+
+<!-- menu bar -->
+        <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn">
+      </i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Overview</header>
+    <ul>
+     <li><a href="#"><i class="fas fa-qrcode"></i>Features</a></li>
+     <li><a href="#"><i class="fas fa-link"></i>Pricing</a></li>
+     <li><a href="#"><i class="far fa-question-circle"></i>About us</a></li>
+     <li><a href="#"><i class="fas fa-stream"></i>Help center</a></li>
+     <li><a href="#"><i class="fas fa-calendar-week"></i>Contact us</a></li>
+     <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+     
+    </ul>
+   </div>
+
+
+
+    </div>
+    <!-- Report button -->
+    <button class="button-EmergencyReport" onclick="redirectReport()">Emergency Report</button>
+    <!-- weather report -->
+    <div class="info-box weather">
+        <h2>Weather Update</h2>
+        <p>Current temperature: 25°C, Sunny</p>
+    </div>
+
+    <div class="info-box news">
+        <h2>Latest News</h2>
+        <p>Breaking news: Major tech breakthrough announced!</p>
+    </div>
+
+    <div class="info-box notification">
+        <h2>Notifications</h2>
+        <p>You have 3 new messages.</p>
+    </div>
+</div>
+
+
+<div class="container-bottom">
+    <div>
+        <button class="button-DisGuide" onclick="redirectDisGuide()">Disaster Preparedness Guide</button>
+    </div>
+  
+    <button class="button-emKit">Emergency Checklist</button>
+    
+    <div id="modal" class="modal">
+        <div class="modal-header">Emergency Checklist <span class="close-btn">&times;</span></div>
+        <ul>
+            <li>Call 911 if needed</li>
+            <li>Check for injuries</li>
+            <li>Ensure safety before helping others</li>
+            <li>Locate emergency contacts</li>
+            <li>Follow evacuation procedures</li>
+            <li>Turn off gas, electricity, and water if necessary</li>
+            <li>Have an emergency supply kit ready</li>
+            <li>Know the nearest emergency exits</li>
+            <li>Stay informed through official alerts</li>
+            <li>Identify a meeting point for family or coworkers</li>
+            <li>Store enough food and water for at least 72 hours</li>
+            <li>Keep a flashlight with extra batteries</li>
+            <li>Have a first aid kit available</li>
+            <li>Prepare essential medications and prescriptions</li>
+            <li>Carry a whistle to signal for help</li>
+            <li>Keep extra clothing and blankets for warmth</li>
+        </ul>
+    </div>
+    <div>
+        <button class="button-loRes" onclick="redirectLocRes()">Local resource</button>
+    </div>
+    <select name="Languages" class="lng">
+        <option value="eng">English</option>
+        <option value="frn">French</option>
+        <option value="spn">Spanish</option>
+        <option value="rsn">Russian</option>
+    </select>
+</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
