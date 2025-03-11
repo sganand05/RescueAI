@@ -1,5 +1,5 @@
 function redirectHome(){
-    window.location.href="LandingPage.html";
+    window.location.href="index.html";
 }
 function redirectReport(){
     window.location.href="IncidentReportForm.html";
